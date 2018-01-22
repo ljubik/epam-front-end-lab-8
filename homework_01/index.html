@@ -15,90 +15,124 @@
         <div id="content" role="main">
         <!-- TODO: Content goes here -->
 		<header>
-		<img src="EPAM_logo.svg" alt="Logo EPAM comany">
-		<nav>
-		<p> 
-		<span><a href="">HTML</a></span> <a href="">List</a> <a href="">Table</a> <a href="">Text formats</a> <a href="">Blockquotes</a>
-		</p>
-		</nav>
-		<hr>
+			<a href="http://www.epam.com/"><img src="EPAM_logo.svg" alt="Logo EPAM comany"></a>
+				<nav>
+					<span><a href="index.html#HTML Elements">HTML</a></span> <a href="index.html#list">List</a> <a href="index.html#Table">Table</a> <a href="index.html#Text formats">Text formats</a> <a href="index.html#Blockquotes">Blockquotes</a>
+				</nav>	
 		</header>
+		<section>
+		<hr>
+		<a name="HTML Elements"></a>
 		<h1><b>HTML Elements</b></h1>
 		<hr>
-		<ul>Ordered List
-			<li>Heading 1 </li>
-			<ul><li>Heading 2 </li>
-			<ul><li><h3>Heading 3</h3></li></ul></ul>
-			<li type="1" value="1"><h4>Heading 4 </h4></li>
-			<ul><li type="A" value="A"><h5>Heading 5</h5></li>
-			<ul><li type="i" value="i"><h6>Heading 6</h6></li></ul></ul>
+		<a name="list"></a>
+		<ul><h2>Ordered List</h2>
+			<li><h1>Heading 1 </h1></li>
+				<ul>
+					<li><h2>Heading 2</h2>
+					</li>
+					<ul>
+						<li><h3>Heading 3</h3>
+						</li></ul>
+					</ul>
 		</ul>
-Definition List
-defines terms 1
-description 1
-defines terms 2
-description 
-Details
-Even more details open
-Here are even more details about the details.
-
-Even more details close
-Here are even more details about the details.
-
-Table
-Elements
-Elements
-Elements
-
-Strong
-HO
-Test link
-
-Italic
-Underline.
-Delete
-
-<abbr>Abbreviation</abbr>
-5^3=125
-Inserted
-
-Text formats
-
-Article Text
-Article title
-Article description
-
-Preformatted Text
-
-Text
-  in a pre element
+		<ul><li type="1"><h4>Heading 4 </h4></li><!--type needet?--> 
+			<ul>
+				<li type="A"><h5>Heading 5</h5>
+				</li><!--type needet?--> 
+			<ul>
+				<li type="i" ><h6>Heading 6</h6>
+				</li>
+			</ul>
+			</ul> <!--type needet?--> 
+		</ul>
+		
+		<dl><h3>Definition List</h3>
+			<dt>defines terms 1</dt>
+				<dd>description 1</dd>
+			<dt>description</dt>
+				<dd>Definition</dd>
+        </dl>
+		<h2>Details</h2>
+		<details open="open">
+		<summary>Even more details open</summary>
+			<p>Here are even more details about the details.</p>
+		</details>
+		<details close="close"><summary>Even more details close</summary>
+			<p>Here are even more details about the details.</p>
+		</details>
+		<hr>
+		<a name="Table"></a>
+		<h2>Table</h2>
+		<table>
+		<tr>
+			<th>Elements</th>
+			<th>Elements</th>
+			<th>Elements</th>
+        </tr>
+			<tbody>
+			<tr>
+				<td><strong>Strong</strong></td>
+				<td>H<sub>2</sub>O</td>
+				<td><a href="#">Test link</a></td>
+			</tr>
+			<tr>
+				<td><i>Italic</i></td>
+				<td><u>Underline.</u></td>
+				<td><del>Delete</del></td>
+			</tr>
+			 <tr>
+				<td><abbr>Abbreviation</abbr></td>
+				<td>5<sup>3</sup>=125</td>
+				<td><ins>Inserted</ins></td>
+			</tr>
+			</tbody>
+		</table>
+		<hr>
+		<a name="Text formats"></a>
+		<h2>Text formats</h2>
+<h3>Article Text</h3>
+<article>
+<h2>Article title</h2>
+<p>Article description</p>
+</article>
+</Article>
+		<h3>Preformatted Text</h3>
+			<pre>
+<b>Text</b>
+  in a <b>pre</b> element
     is displayed in a fixed-width
 font, and it preserves
 both           spaces and
     line breaks
 
-Code
-
+			</pre>
+			
+		<h3>Code</h3>
+		
+			<code><pre> 
 .wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
   grid-auto-rows: minmax(100px, auto);
 }
-
-Blockquotes
-
+			</code></pre>
+		<hr>
+		<a name="Blockquotes"></a>
+		<h3>Blockquotes</h3>
 Let’s keep it simple. Italics are good to help set it off from the body text. Be sure to style the citation.
+<p><blockquote>
 Technology is nothing. What's important is that you have a faith in people, that they're basically good and smart, and if you give them tools, they'll do wonderful things with them.
-            
-Steve Jobs
-
-And here’s a bit of trailing text.
-
-Copyright Epam Systems
+<br><a href="https://cil.org.ua">Steve Jobs</a></p>
+</blockquote>
+<div class="nocomments">And here’s a bit of trailing text.</div>
+</section>
+		 <footer>
+			Copyright Epam Systems
 
 		  
-		  
+		 </footer>		  
         </div>
       </div>
     </div>
