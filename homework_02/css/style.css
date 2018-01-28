@@ -12,12 +12,11 @@ a:focus{color:#666;outline:0}ul{padding:0;margin:0}body{background-color:#f2f2f2
 write your code here
 
 */
-@media {
+@media{	
 /* task 2 */
 .gallery-container:nth-child(odd){
 border:1px silver;
-}	
-	
+}		
 
 /*  task 3 */
 p::first-letter {
@@ -92,7 +91,7 @@ color: black;
 input.form-control, button.submit-btn{
 	color: red;
 }	
-	
+}	
 	
 
 
@@ -114,7 +113,7 @@ h2.tm-section-title{
 	position: absolute;
 	}
 footer {
-	display:once;
+	display: inline-block;
 	}
 p::first-letter {
 font-size:16px;
