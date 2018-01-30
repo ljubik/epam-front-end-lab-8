@@ -1,0 +1,123 @@
+// MIXing
+	@mixin Main {
+		color: $headingImgBorder;
+		text-transform: $textTrans;
+		font-size: 2em;
+	}
+	
+	.brief {
+        background-color: $briefColor;
+        float: $briefPos;
+        margin-right: $briefRgt;
+        margin-bottom: $briefB;
+        padding: $marginConst;
+        width: $custWidth;
+        }
+		
+	body {
+		background-color: $maineColor;
+	} 
+	
+    h1 {
+        @include Main;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    h2 {
+        color: $headingImgBorder;
+    }
+
+    a {
+        color: $linkColor;
+    }
+
+    > p {
+        color: $pColor;
+        width: 100%;
+    }
+
+	img {
+        border: 2px solid $headingImgBorder;
+        margin-right: $marginConst;
+		padding: 3px;
+    }
+
+    .img-left {
+        float: left;
+    }
+
+    .img-right {
+        float: right;
+    }
+	
+	#content {
+	background-color: $contentColor;   
+	width: 60%;
+	max-width: 1200px;
+	padding: 20px;
+	margin: 0 auto;
+	}
+
+	table {
+    background-color: $tableColor;
+    border-collapse: collapse;
+    margin-bottom: 60px;
+
+    th {
+	    background-color: $tableFrame;
+        text-align: left;
+        text-transform: uppercase;
+        font-weight: 400;
+        padding: 10px 10px 10px 20px;
+        &:not(:first-child) {
+            border-left: 1px solid white;
+        }
+    }
+
+    tr {
+        border-bottom: 1px solid $tableFrame;
+    }
+
+    td {
+        color: $pColor;
+        padding: 10px 10px 10px 20px;
+    }
+	}
+
+
+// vidguk forma
+
+	.userInfo {
+	  display: flex;
+	}
+
+	.userName {
+	  padding: 0 10px 0 0;
+	  width: 50%;
+	}
+
+	.lastName {
+	  width: 50%;
+	}
+
+	input {
+	  width: 100%;
+	  margin: 9px 0 14px 0;
+	}
+
+	textarea {
+	  color: $infotxtColor;
+	  width: 100%;
+
+	}
+	input {
+	  width: 240px;
+	  font-size: 20px;
+	  padding: 12px 60px;
+	}
+
+	.infotext {
+	  color: $infotxtColor;
+	  margin: 0;
+	}
