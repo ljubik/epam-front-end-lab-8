@@ -1,0 +1,90 @@
+.brief {
+  background-color: #fff178;
+  float: none;
+  margin-right: 0;
+  margin-bottom: 40px;
+  padding: 20px;
+  width: initial; }
+
+body {
+  background-color: #e0f6fd; }
+
+h1 {
+  color: #fccd10;
+  text-transform: uppercase;
+  font-size: 2em;
+  margin-top: 0;
+  text-align: center; }
+
+h2 {
+  color: #fccd10; }
+
+a {
+  color: #fccd10; }
+
+> p {
+  color: white;
+  width: 100%; }
+
+img {
+  border: 2px solid #fccd10;
+  margin-right: 20px;
+  padding: 3px; }
+
+.img-left {
+  float: left; }
+
+.img-right {
+  float: right; }
+
+#content {
+  background-color: #3b3b3b;
+  width: 60%;
+  max-width: 1200px;
+  padding: 20px;
+  margin: 0 auto; }
+
+table {
+  background-color: #677d01;
+  border-collapse: collapse;
+  margin-bottom: 60px; }
+  table th {
+    background-color: #94a34e;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 10px 10px 10px 20px; }
+    table th:not(:first-child) {
+      border-left: 1px solid white; }
+  table tr {
+    border-bottom: 1px solid #94a34e; }
+  table td {
+    color: white;
+    padding: 10px 10px 10px 20px; }
+
+.userInfo {
+  display: flex; }
+
+.userName {
+  padding: 0 10px 0 0;
+  width: 50%; }
+
+.lastName {
+  width: 50%; }
+
+input {
+  width: 100%;
+  margin: 9px 0 14px 0; }
+
+textarea {
+  color: #808080;
+  width: 100%; }
+
+input {
+  width: 240px;
+  font-size: 20px;
+  padding: 12px 60px; }
+
+.infotext {
+  color: #808080;
+  margin: 0; }
