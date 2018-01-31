@@ -5,4 +5,3 @@ https://docs.google.com/spreadsheets/d/1nAh5H9tGk0fHgkQrzhvtsyNlkV10LT4uWxos9ah8
 
 https://gitter.im/front-end-lab-8/Lobby
 
-https://gitter.im/FL8-04/Lobby
