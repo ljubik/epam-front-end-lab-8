@@ -1,17 +1,16 @@
-function reverseNumber()
-{
+function reverseNumber(){
 var a,no,b,temp = 0;
 
-var no = Number(prompt("Введіть число", "321"));
+var no = Number(prompt("Введіть число"));
 
 b=no;
 
-while(no>0)
+while(no>0 || no<0)
 {
 a=no%10;
 no=parseInt(no/10);
 temp=temp*10+a;
 }
-alert("результат" + temp);
-console.log(temp);
+alert("результат " + temp);
+
 }
