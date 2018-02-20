@@ -10,5 +10,5 @@ function forEach(MyArr, el){
 
 
 function el(){
-	
+	return(MyArr[index]);
 };

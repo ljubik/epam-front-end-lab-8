@@ -29,7 +29,7 @@ var movies = [
 	"bookmark": [{time: 65876586}]
 }];
 
-
-function collectIds (){
-	
+function collectIds(movies) {
+    return getTransformedArray(getFilteredArray(movies, elem => elem.rating>3),
+            elem => elem.id);
 }
