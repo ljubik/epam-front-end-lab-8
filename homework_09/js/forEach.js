@@ -4,15 +4,11 @@ function forEach(MyArr, el){
 	for (var index = 0; index < MyArr.length; ++index) {
 		//console.log((MyArr[index])+ " Функція forEach");
 		//MyArr[index] = Number(MyArr[index] + [1]);
+		el(MyArr[index]);
 	};
-	return(MyArr);
 };
 
 
 function el(){
-	return(MyArr);
+	
 };
-
-
-
-
