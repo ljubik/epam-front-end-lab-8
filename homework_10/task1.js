@@ -1,30 +1,25 @@
-/**
- * Your debounce function goes here
- * function(){}
- */
-
-// Example
+function debounce (variable, delay){
+	var IDtime;
+	return function () {
+		clearTimeout(IDtime);
+		IDtime = setTimeout(variable, delay);
+	}
+}
 
 let iterator = 0;
 
-function increaseIteratorBy1() {
-  iterator++;
-
-  printIteratorValue();
+function callback() {
+	iterator++;
+	printIteratorValue();
 }
 
 function printIteratorValue() {
-  console.log('Iterator value ', iterator);
+	console.log('Iterator value ', iterator);
 }
 
-var increaseIterator = debounce(increaseIteratorBy1, 1000);
+var debouncedCallback = debounce(callback, 777);
 
-increaseIterator();
-increaseIterator();
-increaseIterator();
-increaseIterator();
-increaseIterator();
-increaseIterator();
-increaseIterator();
-increaseIterator();
-increaseIterator(); // Should print 'Iterator value 2'
+debouncedCallback();
+debouncedCallback();
+debouncedCallback();
+debouncedCallback();
