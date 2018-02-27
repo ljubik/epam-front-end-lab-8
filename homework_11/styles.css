@@ -1,0 +1,37 @@
+ul {
+  list-style: none
+}
+
+i {
+  color: yellow;
+}
+
+.file i {
+  color: gray;
+}
+
+.empty {
+	  font-style: italic;
+	  display: none;
+}
+
+.subfolder {
+	  margin-left: 12px;
+	  display: none;
+}
+
+.folder-name, .file {
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	flex-direction: row-reverse;
+	justify-content: flex-end;
+}
+
+.folder-name:hover, .file:hover {
+	background-color: #eeeffe;
+}
+
+.folder.open > .subfolder, .folder.open > .empty {
+  display: block;
+}
