@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  /* background: black; */
+}
+.main {
+  width: 320px;
+  height: 380px;
+  margin: 100px auto 0;
+  border: 10px solid rgb(151, 147, 147);
+  font-size: 25;
+}
+
+.cell {
+  width: 300px;
+  height: 30px;
+  border: 1px solid rgb(73, 71, 71);
+  display: inline-block;
+}
